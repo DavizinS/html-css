@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        @font-face {
+            font-family: 'Mauritz';
+            src: url('fonts/MauritzCaps_PERSONAL_USE_ONLY.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #015958, #008F8C, #0CABA8);
+            color: white;
+        }
+        h1, h2 {
+            font-family: Mauritz, Helvetica, sans-serif;
+            color: #023535;
+            text-align: center;
+        }
+        
+        a {
+            color: #0FC2C0;
+            text-decoration: none;
+        }
+
+
+        a:hover {
+            color: white;
+        }
+
+        a:active {
+            color: chartreuse;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: white;
+            width: 300px;
+            background-color: white;
+            border-radius: 03px;
+            padding: 3px;
+        }
+
+        a::before {
+            content: '☛ ';
+            color: white;
+        }
+
+        a::after {
+            content: ' ☚';
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/DavizinS" target="_blank" rel="external">Repositório GitHub</a></li>
+        <div>
+            <li>☛ Rede Sociais ☚</li>
+            <p><a href="https://twitter.com/davizinrjx" target="_blank" rel="external">Twitter</a></p>
+            <p><a href="https://instagram.com/djdavibrr" target="_blank" rel="external">Instagram</a></p>
+        </div>
+    </ul>
+</body>
+</html>
