@@ -10,15 +10,53 @@ body  {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    background-color: white;
+    padding: 5px;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+nav > a:hover {
+    color: rgb(110, 228, 110);
+    transition-duration: 1s;
+}
+
 header {
     background-color: rgb(49, 141, 49);
     color: white;
     text-align: center;
     padding-top: 20px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.459);
 }
 
 header > p {
     padding-bottom: 20px;
+}
+
+main {
+    background-color: white;
+    max-width: 380px;
+    margin: auto;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.329);
+}
+
+article {
+  /* */  
+}
+
+article h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+article p {
+    text-align: center;
+    padding: 10px;
 }
 
 table  {
@@ -30,8 +68,13 @@ table  {
     margin: auto;
 }
 
+hr {
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.274);
+}
+
 tr {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.589);
 }
 
 .titulo {
