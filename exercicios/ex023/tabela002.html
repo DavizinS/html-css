@@ -14,6 +14,7 @@
             border: 1px solid black;
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
 
         th {
@@ -37,6 +38,16 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) { /* PAR 2n - IMPAR 2n-1 */
+            background-color: lightgray;
         }
 
         .numeros {
